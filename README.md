@@ -1,7 +1,6 @@
-# Predict-Health-Outcomes-of-Horses
+# Predict_NYC_Taxi_TripTime
 
-* This project focuses on prediciting the outcome of the health of horses, whether they will possibly be dead or alive, through the use of the attempt of Machine Learning (ML).
-
+* This project focuses on prediciting the trip duration of a taxi cab in NYC (New York City), through the usage of Machine Learning (ML)
 ## Overview
 
 * This section could contain a short paragraph which include the following:

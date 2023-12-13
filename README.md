@@ -1,12 +1,13 @@
 # Predict_NYC_Taxi_TripTime
 
 * This project focuses on prediciting the trip duration of a taxi cab in NYC (New York City), through the usage of Machine Learning (ML)
+* Link: https://www.kaggle.com/competitions/nyc-taxi-trip-duration
+  
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+  * **Definition of the tasks / challenge**  Ex: The task at hand is to predict the trip time in seconds, in New York City with machine learning (ML) techniques implementing linear regression to predict the trip time. The challenege uses RMSE (Root-Mean-Squared Errror) between the predicted model and that of the tested model. The challenege is trying to get a low RMSE score, in that our united being measured and predicted the deviation is low.
+  * **Your approach** Ex: The appproach we used was using Machine Learning, linear regression model to find a reliable linear regression equation, coefficient and intercept that can help us predict the trip duration.
+  * **Summary of the performance achieved** Ex: Our best model was able to predict the next NYC taxi trip duration within 10%, 16% of the time. Much could be done in cleaning the data to ensure the accuracy of predictability increases within a small margin of error. 
 
 ## Summary of Workdone
 
@@ -15,19 +16,27 @@ Include only the sections that are relevant an appropriate.
 ### Data
 
 * Data:
-  * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Type: float64
+    * Input: CSV file consisted of 8 columns which contained pickup and dropoff time along with others.
+  * Size: 90mb
+  * Instances (Train, Test, Validation Split):
+  * Train: Contained 1458644 trip records but reduced to 80,000 trip records
+  * Test: 20,000 trips
+  * Validation Split: 80% was used as training, and 20% was used as testing
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+* Due to possible outliers in the training data, we removed possible outliers via, IQR and Upper and Lower Bound limits
+* Created 2 new columns, "diff_longitude" and "diff_latitude" for the difference of the longitude and latitude between the test and train, and absolute values of the difference.
+* Standardizing the feature in order for the data values to be more accurate.
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/d4878813-3d5b-4f11-bb07-d0e1fc466c5f)
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/c22bea9d-c6b3-4ad8-8ddc-d3aa978a099b)
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/82753088-bbf9-4413-bc91-79fb6b691260)
+
+
 
 ### Problem Formulation
 

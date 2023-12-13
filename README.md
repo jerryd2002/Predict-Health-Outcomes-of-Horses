@@ -108,7 +108,10 @@
 
 ## Citations
 
-* Provide any references.
+* https://www.kaggle.com/competitions/nyc-taxi-trip-duration
+* https://www.kaggle.com/code/sudhirnl7/linear-regression-tutorial
+* https://www.askpython.com/python/examples/rmse-root-mean-square-error
+* https://www.kaggle.com/code/salvarezgonz/nyc-taxi-duration-regression-lightgbm-ml-model
 
 
 

@@ -29,91 +29,81 @@
 * Standardizing the feature in order for the data values to be more accurate.
 
 #### Data Visualization
-
+* Pickup Longitude
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/d4878813-3d5b-4f11-bb07-d0e1fc466c5f)
+* Pickup Latitude
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/cfe9b880-9402-406c-b38d-57ba80b30543)
+*  Dropoff Longitude
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/e93b8de3-85be-46ca-9554-ce88d50fc6a3)
-*![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/88c27193-98e3-4c36-b1fd-e48322c8a16d)
-
+*  Dropoff Latitude
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/88c27193-98e3-4c36-b1fd-e48322c8a16d)
+*  Trip Duration
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/7a684a51-8cc2-4ce1-8a08-11311ab66938)
+*  Distance Difference of Latitude and Longitude
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/c22bea9d-c6b3-4ad8-8ddc-d3aa978a099b)
+*  Actual vs. Adjusted Predicted Trip Durations
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/82753088-bbf9-4413-bc91-79fb6b691260)
 
 
 
 ### Problem Formulation
 
-* Define:
-  * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+* Define: The model should be similar to that of hte data that is contained in the sample_submission.zip, through that we train the model.
+   * Input/Output:
+   * Input: test.zip, train.zip
+   * Output: predicted_trip_duration.csv, containing the predicted
+*Models:
+  *Usage of Linear Regression: Predicted possible trip duration based upon tested and train dataset.
 
 ### Training
 
 * Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
-
-### Performance Comparison
-
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+  * Used LinearRegreesion, model was trained under the test and train dataset, in order to predict taxi duration in NYC through utilizing and attempting to replcate the sample_submission.zip, then utilizing RMSE (Root Mean Squared Error) that shows the variance between the model and the data being compared to.
+  
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* Given our computed values of RMSE = 844.32 and percentage of perdictability of predictions within 10% error: 15.63%, our model appears to unreliant when compaing to that of the data as we appear to have high variance between them. Most likely, error in the code for the model that caused the high variance, with that most likely comparing incorrectly.
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* I would try to improve on my models to reduce the variance, the RMSE score that will help make my models more reliable that allows for its predictions to be used with confidence with other datasets.
+* Implying this further into other studies using advanced regression models and error analysis to determine why models are making errors.
 
 ## How to reproduce results
+ * Clone the repository
+ * Download rhe files from the Kaggle Challenege link
+ * Unzip the downloaded files, then look at the dataframe of the test.zip and train.zip
+ * Remove Outliers in the trip duration of our data set.
+ * Visualize the columns necessary to help make trip duration prediction
+ * Forms graphs, histogram in this case that visualizes the longitutde, latittude, and trip duration
+ * Using the Linear Regression Model from Sklearn to predict.
+ * Analyze the predict variance from actual using RMSE and Perctange of Perdictability to insure reliability 
+   
 
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+* Jerry_Prediction.ipynb: contains the visulizations, linear regression model, RMSE
+* predicted_trip_duration.csv: contains the id and predicted taxi duration to that of id
+* result_with_difference.csv: contains the difference of longitude and latitude, dropoff and pickup with time duration 
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* Python 3.7
+* Required Packages:
+  * Install in terminal
+    * Pandas: 'pip install pandas'
+    * Numpy: ' pip install numpy'
+    * Matplotlib.pyplot: 'pip install matplotlib'
+    * Sklearn: 'pip install scikit-learn'
+    * import train_test_split, mean_squared_error, LinearRegression, and Standard Scaler in Notebook
+      
+    * ZipFile: import ZipFile
+  
 
 ### Data
+ * All the data can be downloaded through the Kaggle Challenege
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
-
-### Training
-
-* Describe how to train the model
-
-#### Performance Evaluation
-
-* Describe how to run the performance evaluation.
 
 
 ## Citations

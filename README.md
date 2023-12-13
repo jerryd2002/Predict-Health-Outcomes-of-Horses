@@ -102,9 +102,6 @@
     * ZipFile: import ZipFile
   
 
-### Data
- * All the data can be downloaded through the Kaggle Challenege
-
 
 
 ## Citations

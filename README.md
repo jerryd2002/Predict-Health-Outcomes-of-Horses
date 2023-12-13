@@ -11,8 +11,6 @@
 
 ## Summary of Workdone
 
-Include only the sections that are relevant an appropriate.
-
 ### Data
 
 * Data:
@@ -33,6 +31,10 @@ Include only the sections that are relevant an appropriate.
 #### Data Visualization
 
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/d4878813-3d5b-4f11-bb07-d0e1fc466c5f)
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/cfe9b880-9402-406c-b38d-57ba80b30543)
+* ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/e93b8de3-85be-46ca-9554-ce88d50fc6a3)
+*![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/88c27193-98e3-4c36-b1fd-e48322c8a16d)
+
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/c22bea9d-c6b3-4ad8-8ddc-d3aa978a099b)
 * ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/82753088-bbf9-4413-bc91-79fb6b691260)
 

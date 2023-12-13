@@ -2,7 +2,9 @@
 
 * This project focuses on prediciting the trip duration of a taxi cab in NYC (New York City), through the usage of Machine Learning (ML)
 * Link: https://www.kaggle.com/competitions/nyc-taxi-trip-duration
-  
+
+  ![image](https://github.com/jerryd2002/Predict_NYC_Taxi_TripTime/assets/98507605/9aedc0dc-0f3a-472e-b2c8-35890a33ed7c)
+
 ## Overview
 
   * **Definition of the tasks / challenge**  Ex: The task at hand is to predict the trip time in seconds, in New York City with machine learning (ML) techniques implementing linear regression to predict the trip time. The challenege uses RMSE (Root-Mean-Squared Errror) between the predicted model and that of the tested model. The challenege is trying to get a low RMSE score, in that our united being measured and predicted the deviation is low.
